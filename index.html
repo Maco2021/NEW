@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveBox</title>
+    <meta name="viewport" content="width-divice-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class=" header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo" data-scroll="#intro">
+                    <!-- <img src="/img/selfie.png" alt="img"> -->
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#features"><img src="./img/fblock/pg.png" alt="img"></a>
+                    <a class="nav__link" href="#" data-scroll="#video"><img src="./img/fblock/vg.png" alt="img"></a>
+                    <a class="nav__link" href="#" data-scroll="#Slider"><img src="./img/fblock/al.png" alt="img"></a>
+                    <a class="nav__link" href="#" data-scroll="#team"><img src="./img/fblock/nn.png" alt="img"></a>
+                    <a class="nav__link" href="#" data-scroll="#download"><img src="./img/fblock/co.png" alt="img"></a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__innera">
+                <div class="rotate-block">
+                    <div class="change-img">
+                        <div class="front-side-img"> <a href="#" data-scroll="#features"><img src="./img/04.png"
+                                    alt="img"></a></div>
+                    </div>
+                </div>
+                <div class="rotate-block">
+                    <div class="change-img">
+                        <div class="front-side-img"><a href="3" data-scroll="#video"><img src="./img/05.png"
+                                    alt="img"></a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper -->
+    <sec class="dom">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </sec>
+
+    <!--Features-->
+    <div class="container" id="features">
+        <div class="features" id="features">
+            <input type="radio" id="s-1" name="slider-control" checked="checked">
+            <input type="radio" id="s-2" name="slider-control">
+            <input type="radio" id="s-3" name="slider-control">
+            <div class="js-slider">
+                <figure class="js-slider_item img-1">
+                    <div class="js-slider_img">
+                        <img class="c-img-h-full" src="./img/fotoblock/11.jpg" alt="img">
+                    </div>
+                    <figcaption class="wo-caption">
+                        <h3 class="wo-h3">
+                            <div class="c-label"><img src="./img/selfie.png" alt=""></div>
+                        </h3>
+                    </figcaption>
+                </figure>
+                <figure class="js-slider_item img-2">
+                    <div class="js-slider_img">
+                        <img class="c-img-h-full" src="./img/fotoblock/13.jpg" alt="img">
+                    </div>
+                </figure>
+                <figure class="js-slider_item img-3">
+                    <div class="js-slider_img">
+                        <img class="c-img-h-full" src="./img/fotoblock/12.jpg" alt="img">
+                    </div>
+                </figure>
+                <div class="js-slider_nav">
+                    <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
+                    <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+                    <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+                    <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+                    <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+                    <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+                </div>
+                <div class="js-slider_indicator">
+                    <div class="js-slider-indi indi-1"></div>
+                    <div class="js-slider-indi indi-2"></div>
+                    <div class="js-slider-indi indi-3"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="container" id="video">
+        <div class="features" id="video">
+
+        </div>
+    </div>
+    <div class="sections">
+        <video src="/img/video/video1.mp4" class="slider" autoplay loop muted controls></video>
+        <ul>
+            <li onclick="videoslider('./img/video/video1.mp4')"><video src="./img/video/video1.mp4"></video></li>
+            <li onclick="videoslider('./img/video/video2.mp4')"><video src="./img/video/video2.mp4"></video></li>
+            <li onclick="videoslider('./img/video/video3.mp4')"><video src="./img/video/video3.mp4"></video></li>
+            <li onclick="videoslider('./img/video/video4.mp4')"><video src="./img/video/video4.mp4"></video></li>
+        </ul>
+    </div>
+    <script>
+        function videoslider(links) {
+            document.querySelector(".slider").src = links
+        }
+    </script>
+
+    <!--  Album -->
+    <div class="slider" id="Slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="./img/album/01.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/02.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/03.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/04.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/05.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/06.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/07.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/08.jpg" alt="img">
+            </div>
+
+            <!-- Same 9 slides (doubled) -->
+
+            <div class="slide">
+                <img src="./img/album/09.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/10.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/11.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/12.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/13.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/14.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/15.jpg" alt="img">
+            </div>
+            <div class="slide">
+                <img src="./img/album/16.jpg" alt="img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Gotobtn -->
+    <div class="container">
+        <div class="gotobtn">
+            <!-- <i class="fas fa-arrow-up"></i> -->
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="team" id="team">
+        <div class="container">
+            <div class="team__inner">
+
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_1.jpg "
+                        alt="">
+                    <div class="team__name">Ana Venieru</div>
+                    <div class="team__text">
+                        <p>Ana Venieru - Vă mulțumim foarte mult pentru atmosfera creată. Este
+                            confortabil și ușor să
+                            lucrezi cu Dvs., ceea ce este destul de important și necesar pentru
+                            o muncă
+                            eficientă și un
+                            rezultat frumos ❤️ Cu mare drag vă recomandăm . Vă dorim succese în
+                            tot ce
+                            faceți!O faceți
+                            foarte bine❤️</p>
+                    </div>
+
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_2.jpg "
+                        alt="">
+                    <div class="team__name">Djulia Gheorghina</div>
+
+                    <div class="team__text">
+                        <p> Mulțumim pentru serviciile oferite!!! Sunteți superbi și
+                            fotografiile sunt
+                            la nivel. Vă
+                            recomand cu încredere 🤩🤩🤩 succese </p>
+                    </div>
+
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_3.jpg "
+                        alt="">
+                    <div class="team__name">Elena Trifan Chițanu</div>
+
+                    <div class="team__text">
+                        <p>Recomand cu încredere! Datorită Cabinei Foto Ring, am avut o
+                            petrecere mai
+                            interesantă. Am
+                            primit toate pozele în plic, magneți și un link cu pozele de la
+                            petrecere.
+                            Toate acestea la
+                            un preț mai bun decât la ceilalți care prestează astfel de servicii.
+                            Domnul
+                            cu Cabina Foto a
+                            avut răbdare cu noi atunci când am ales template-ul și am discutat
+                            toate
+                            detaliile și în
+                            timpul evenimentului a fost la dispoziția noastră atât timp cât am
+                            avut
+                            nevoie. Vă mulțumim
+                            pentru serviciile dumneavoastră!</p>
+
+                    </div>
+
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_4.jpg "
+                        alt="">
+                    <div class="team__name">Georgiana Muntean</div>
+                    <div class="team__text">
+                        <p>Servicii de nota 10!😊 Mulțumim pentru serviciile voastre! Deși am
+                            discutat
+                            doar in modul
+                            virtual și nu ne-am întâlnit decât în ziua evenimentului, totul a
+                            mers
+                            foarte bine:
+                            calitatea pozelor, diverse animații pentru poze, mereu era cineva
+                            lângă
+                            cabina care ajuta
+                            persoanele în realizarea fotografiilor, amabilitate si pret bun!
+                            Mulțumim!
+                            Cu siguranță vă
+                            voi recomanda și altor persoane.🥳</p>
+
+                    </div>
+
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_5.jpg "
+                        alt="">
+                    <div class="team__name">Andreea Galici</div>
+                    <div class="team__text">
+                        <p>Echipa care îți creează memorii pe viață! Servicii la superlativ!</p>
+                    </div>
+
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_6.jpg "
+                        alt="">
+                    <div class="team__name">Maria Ciobanu</div>
+
+                    <div class="team__text">
+                        <p>Mulțumim pentru lucru calitativ , cu toții am rămas plăcut surprinși
+                            . Din
+                            partea mea , aș
+                            dori să vă urez succes și să-mi exprim recunoștința pentru munca
+                            excelentă .
+                            Neapărat
+                            revenim la Dvs 🥰</p>
+
+                    </div>
+
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_7.jpg "
+                        alt="">
+                    <div class="team__name">Prisăcaru Valentina</div>
+
+                    <div class="team__text">
+                        <p>Super invenție pentru ați creea o petrecere frumoasă și deosebită ,cu
+                            amintiri în formă de
+                            poze interesante și de calitate . Recomand cu cea mai mare încredere
+                            .🥇❤️
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_8.jpg"
+                        alt="">
+                    <div class="team__name">Balanici Ion</div>
+
+                    <div class="team__text">
+                        <p>Recomand cu încredere și căldură, servicii de nota 10. Poze
+                            calitative ,
+                            amintiri frumoase 🥳
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!--/.team_inner-->
+        </div>
+        <!--/.container-->
+    </div>
+
+    <!-- Hexagon -->
+    <section id="lab">
+        <div class="sectionheader">
+            <h1><img src="./img/fblock/hex.png" alt="img"></h1>
+        </div>
+        <article>
+
+            <div class="lab_item">
+                <div class="hexagon hexagon2">
+                </div>
+            </div>
+            <div class="lab_item">
+                <div class="hexagon hexagon2">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(./img/clients/fenix.png);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lab_item">
+                <div class="hexagon hexagon2">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(./img/clients/zen.png);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <div class="lab_item2">
+                <div class="hexagon hexagon2">
+
+                </div>
+            </div>
+            <div class="lab_item ">
+                <div class="hexagon hexagon2">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(./img/clients/exp.png);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lab_item">
+                <div class="hexagon hexagon2">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(./img/clients/jus.png);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lab_item">
+                <div class="hexagon hexagon2">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(./img/clients/lt.jpg);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Form -->
+    <div class="contact-section" id="download">
+        <h1 style="background: url(./img/fblock/cu.png) no-repeat center;"> <img ></h1>
+
+        <div class="container">
+            <form class="contact-form" action="index.html" method="post">
+                <input type="text" class="contact-form-text" placeholder="Your name">
+                <input type="emal" class="contact-form-text" placeholder="Your email">
+                <input type="text" class="contact-form-text" placeholder="Your text">
+                <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                <input type="submit" value="" class="contact-form-btn "
+                    style="background: url(./img/fblock/send.png) no-repeat center;">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <div class="copyright__text">
+                <section class="s4">
+                    <a href="#" style="color: #7b310d;" class="iconbtn fab fa-facebook"></a>
+                    <a href="#" style="color: #7b310d;" class="iconbtn fab fa-telegram"></a>
+                    <a href="#" style="color: #7b310d;" class="iconbtn fab fa-viber"></a>
+                </section>
+                <div>
+                    <div><span style="color: #7b310d;">Copyright © 2023 SELFIERING. All Rights Reserved</span></div>
+                </div>
+                <div> <span style="color: #7b310d;">SELFIERING</span></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="path/to/swiper.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"> </script>
+
+</body>
+
+</html>
