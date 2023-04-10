@@ -113,11 +113,10 @@ p {
     transition: opacity .2s linear;
 
 }
-
+GIT 
 .nav__link:first-child{
     margin-left: 0;
 }
-
 
 .nav__link:hover{
     opacity: 1;
