@@ -2,7 +2,7 @@
 .slick-slider
 {
     position: relative;
-
+    width: 336px;
     display: block;
     box-sizing: border-box;
 
@@ -24,7 +24,7 @@
 
     display: block;
     overflow: hidden;
-  
+   
     margin: 0;
     padding: 0;
 }
@@ -34,6 +34,7 @@
 }
 .slick-list.dragging
 {
+   
     cursor: pointer;
     cursor: hand;
 }
@@ -53,7 +54,7 @@
     position: relative;
     top: 0;
     left: 0;
-
+   
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -62,7 +63,7 @@
 .slick-track:after
 {
     display: table;
-
+    
     content: '';
 }
 .slick-track:after
@@ -88,7 +89,7 @@
 }
 .slick-slide img
 {
-    height: 447px;
+    
     display: block;
 }
 .slick-slide.slick-loading img
@@ -111,7 +112,7 @@
 .slick-vertical .slick-slide
 {
     display: block;
-    height: 447px;
+    
     height: auto;
 
     border: 1px solid transparent;
